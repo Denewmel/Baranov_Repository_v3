@@ -2,7 +2,15 @@
 
 int enterThreeDigitIntegerX()
 {
-	//ветка programmer1
+	int X = 100;
+	do
+	{
+		if ((X >= 1000) or (X <= -1000) or ((X < 100) and (X >= 0)) or ((X < 0) and (X > -100)))
+			std::cout << "Неправильный ввод числа Х!\n";
+		std::cout << "Введите целое трёхзначеное число Х: ";
+		std::cin >> X;
+	} while ((X >= 1000) or (X <= -1000) or ((X < 100) and (X >= 0)) or ((X < 0) and (X > -100)));
+	return X;
 }
 
 int enterNumberN()
