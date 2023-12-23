@@ -2,28 +2,12 @@
 
 int enterThreeDigitIntegerX()
 {
-	int X = 100;
-	do
-	{
-		if ((X >= 1000) or (X <= -1000) or ((X < 100) and (X >= 0)) or ((X < 0) and (X > -100)))
-			std::cout << "Неправильный ввод числа Х!\n";
-		std::cout << "Введите целое трёхзначеное число Х: ";
-		std::cin >> X;
-	} while ((X >= 1000) or (X <= -1000) or ((X < 100) and (X >= 0)) or ((X < 0) and (X > -100)));
-	return X;
+	//ветка programmer1
 }
 
 int enterNumberN()
 {
-	int N = 0;
-	do
-	{
-		if ((N > 9) or (N < 0))
-			std::cout << "Неправильный ввод цифры N!\n";
-		std::cout << "Введите цифру N: ";
-		std::cin >> N;
-	} while ((N > 9) or (N < 0));
-	return N;
+	//ветка programmer2
 }
 
 void findFirstDigitOfX(int X)
