@@ -15,7 +15,15 @@ int enterThreeDigitIntegerX()
 
 int enterNumberN()
 {
-	//ветка programmer2
+	int N = 0;
+	do
+	{
+		if ((N > 9) or (N < 0))
+			std::cout << "Неправильный ввод цифры N!\n";
+		std::cout << "Введите цифру N: ";
+		std::cin >> N;
+	} while ((N > 9) or (N < 0));
+	return N;
 }
 
 void findFirstDigitOfX(int X)
