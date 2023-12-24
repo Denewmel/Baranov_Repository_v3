@@ -28,7 +28,7 @@ int enterNumberN()
 
 void findFirstDigitOfX(int X)
 {
-	//ветка programmer3
+	std::cout << "Первая цифра числа " << X << " это " << (X / 100) << std::endl;
 }
 
 void findNthDiginOfX(int N, int X)
