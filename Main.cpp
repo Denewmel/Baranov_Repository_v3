@@ -33,7 +33,18 @@ void findFirstDigitOfX(int X)
 
 void findNthDiginOfX(int N, int X)
 {
-	//ветка programmer4
+	switch (N)
+	{
+	case 1:
+		std::cout << N << " цифра числа " << X << " это " << (X/100) << std::endl;
+		break;
+	case 2:
+		std::cout << N << " цифра числа " << X << " это " << ((X/10)%10) << std::endl;
+		break;
+	case 3:
+		std::cout << N << " цифра числа " << X << " это " << (X%10) << std::endl;
+		break;
+	}
 }
 
 int main()
